@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>paint</title>
+
+    <style>
+        .key {
+            aspect-ratio: 1/1;
+            width: 2rem;
+            font-size: 1rem;
+            display: grid;
+            place-items: center;
+            color: #fff
+        }
+    </style>
+
+    <script src="index.js" defer></script>
+</head>
+<body style="margin:0; font-family: sans-serif;">
+    <div style="position: fixed; top: 0; left: 0; border-radius: 0px 0 10px 0; display: flex;">
+        <div class="key" style="background: red;">1</div>
+        <div class="key" style="background: blue;">2</div>
+        <div class="key" style="background: yellow; color: #000">3</div>
+        <div class="key" style="background: purple;">4</div>
+        <div class="key" style="background: orange;">5</div>
+        <div class="key" style="background: green;">6</div>
+        <div class="key" style="background: #000;">`</div>
+        <div class="key" style="background: #000;">0</div>
+        <div class="key" style="background: #fff; color: #000">w</div>
+
+        <div class="key" style="background: #eee; color: #000">=</div>
+        <div class="key" style="background: #eee; color: #000">-</div>
+        <div class="key" style="background: red;">c</div>
+        <div class="key" title="size"><img src="./moues.png" style="aspect-ratio: 1/1; width: 2rem"></div>
+    </div>
+    <div id="size" style="position: fixed; top: 0; right: 0; font-size: 1.5rem; border-radius: 0px 0 0 10px; background-color: rgb(162, 162, 162); padding: .5rem .8rem; transition: .3s opacity ease; opacity: 1; box-sizing: border-box;">  </div>
+
+    <!-- <div style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;"> -->
+        <canvas id="cvs" width="300" height="400" style="position: fixed; top: 0; left: 0;"></canvas>
+    <!-- </div> -->
+
+</body>
+</html>
